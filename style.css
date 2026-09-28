@@ -1,0 +1,646 @@
+/* =====================
+   General Style
+===================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    font-family:'Segoe UI', Arial, sans-serif;
+
+    background:#f4f7fb;
+
+    color:#333;
+
+    line-height:1.6;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+/* =====================
+   Header
+===================== */
+
+
+header{
+
+    background:linear-gradient(135deg,#0d6efd,#6610f2);
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px 20px;
+
+}
+
+
+header h1{
+
+    font-size:45px;
+
+    margin-bottom:10px;
+
+}
+
+
+header h3{
+
+    font-size:22px;
+
+    font-weight:400;
+
+}
+
+
+header p{
+
+    margin-top:10px;
+
+}
+
+
+
+/* =====================
+   Navigation
+===================== */
+
+
+nav{
+
+    margin-top:25px;
+
+}
+
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    margin:0 15px;
+
+    font-weight:600;
+
+}
+
+
+nav a:hover{
+
+    color:#ffd700;
+
+}
+
+
+
+/* =====================
+   Hero Section
+===================== */
+
+
+.hero{
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+
+
+.hero img{
+
+    width:220px;
+
+    height:220px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:6px solid white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+
+}
+
+
+
+.hero h2{
+
+    margin-top:25px;
+
+    font-size:35px;
+
+    color:#0d6efd;
+
+}
+
+
+.hero p{
+
+    max-width:700px;
+
+    margin:15px auto;
+
+}
+
+
+
+/* =====================
+   Sections
+===================== */
+
+
+section{
+
+    background:white;
+
+    max-width:1000px;
+
+    margin:30px auto;
+
+    padding:40px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+
+}
+
+
+
+section h2{
+
+    text-align:center;
+
+    color:#0d6efd;
+
+    margin-bottom:25px;
+
+    font-size:32px;
+
+}
+
+
+
+
+/* =====================
+   Blog Cards
+===================== */
+
+
+.post{
+
+
+    background:#f1f5ff;
+
+    padding:25px;
+
+    margin:20px 0;
+
+    border-radius:12px;
+
+    border-left:5px solid #0d6efd;
+
+
+}
+
+
+.post h3{
+
+    color:#333;
+
+}
+
+
+
+/* =====================
+   Contact
+===================== */
+
+
+#contact p{
+
+    text-align:center;
+
+    font-size:18px;
+
+}
+
+
+
+/* =====================
+   Footer
+===================== */
+
+
+footer{
+
+    background:#111827;
+
+    color:white;
+
+    text-align:center;
+
+    padding:25px;
+
+    margin-top:40px;
+
+}
+
+
+
+
+/* =====================
+   Mobile Design
+===================== */
+
+
+@media(max-width:600px){
+
+
+header h1{
+
+font-size:32px;
+
+}
+
+
+nav a{
+
+display:block;
+
+margin:10px;
+
+}
+
+
+section{
+
+margin:15px;
+
+padding:25px;
+
+}
+
+
+.hero img{
+
+width:170px;
+
+height:170px;
+
+}
+
+
+}
+form{
+
+text-align:center;
+
+}
+
+
+input,
+textarea{
+
+width:80%;
+
+padding:15px;
+
+border-radius:10px;
+
+border:1px solid #ddd;
+
+font-size:16px;
+
+}
+
+
+textarea{
+
+height:150px;
+
+}
+
+
+button{
+
+background:#0d6efd;
+
+color:white;
+
+padding:12px 35px;
+
+border:none;
+
+border-radius:25px;
+
+font-size:16px;
+
+cursor:pointer;
+
+}
+
+
+button:hover{
+
+background:#6610f2;
+
+}
+#typing{
+
+color:#0d6efd;
+
+font-size:28px;
+
+font-weight:bold;
+
+min-height:40px;
+
+}
+/* Dark Mode */
+
+
+body.dark{
+
+background:#020617;
+
+color:white;
+
+}
+
+
+
+body.dark section{
+
+background:#111827;
+
+color:white;
+
+}
+
+
+
+body.dark .post{
+
+background:#1e293b;
+
+color:white;
+
+}
+
+
+
+body.dark header{
+
+background:linear-gradient(135deg,#020617,#1e3a8a);
+
+}
+
+
+
+body.dark footer{
+
+background:#000;
+
+}
+/* Project Gallery */
+
+
+.project-container{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:30px;
+
+}
+
+
+
+.project-card{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+}
+
+
+
+.project-card img{
+
+width:100%;
+
+height:220px;
+
+object-fit:cover;
+
+border-radius:10px;
+
+}
+
+
+
+.project-card h3{
+
+margin-top:20px;
+
+color:#0d6efd;
+
+}
+
+
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+
+.project-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+}
+/* Social Footer */
+
+
+footer{
+
+background:#111827;
+
+color:white;
+
+text-align:center;
+
+padding:40px 20px;
+
+margin-top:50px;
+
+}
+
+
+
+.social-links{
+
+margin:20px 0;
+
+}
+
+
+
+.social-links a{
+
+display:inline-block;
+
+color:white;
+
+text-decoration:none;
+
+margin:10px;
+
+padding:10px 18px;
+
+border-radius:25px;
+
+background:#0d6efd;
+
+}
+
+
+
+.social-links a:hover{
+
+background:#6610f2;
+
+transform:translateY(-3px);
+
+transition:.3s;
+
+}
+/* Mobile Responsive Design */
+
+@media(max-width:768px){
+
+
+header h1{
+
+font-size:32px;
+
+}
+
+
+nav a{
+
+display:block;
+
+margin:12px;
+
+}
+
+
+.hero{
+
+padding:30px 15px;
+
+}
+
+
+.hero img{
+
+width:170px;
+
+height:170px;
+
+}
+
+
+.hero h2{
+
+font-size:26px;
+
+}
+
+
+
+section{
+
+margin:15px;
+
+padding:25px;
+
+}
+
+
+
+.project-container{
+
+grid-template-columns:1fr;
+
+}
+
+
+
+.project-card{
+
+margin-bottom:20px;
+
+}
+
+
+
+.social-links a{
+
+display:block;
+
+margin:10px auto;
+
+width:200px;
+
+}
+
+
+
+input,
+textarea{
+
+width:100%;
+
+}
+
+
+}
