@@ -8,6 +8,8 @@
 
 <title>About | Arshath Mobika</title>
 
+<link rel="icon" href="images/logo.png">
+
 <link rel="stylesheet" href="style.css">
 
 </head>
@@ -25,19 +27,23 @@ AM
 </div>
 
 
-<ul class="nav-links">
+<div class="menu-icon" id="menu-icon">
+☰
+</div>
+
+
+<ul class="nav-links" id="nav-links">
 
 <li><a href="index.html">Home</a></li>
-
 <li><a href="about.html">About</a></li>
-
 <li><a href="blog.html">Blog</a></li>
-
 <li><a href="projects.html">Projects</a></li>
-
 <li><a href="services.html">Services</a></li>
-
 <li><a href="contact.html">Contact</a></li>
+
+<li>
+<button id="dark-toggle">🌙</button>
+</li>
 
 </ul>
 
@@ -47,39 +53,63 @@ AM
 
 
 
-<section class="about-section">
 
+<section class="about-hero">
+
+
+<div class="about-image">
+
+<img src="images/profile.jpg" alt="Arshath Mobika">
+
+</div>
+
+
+
+<div class="about-content">
 
 <h1>
 About Me
 </h1>
 
 
+<h2>
+Computer Science Engineer | Web Developer
+</h2>
+
+
 <p>
 
 I am Arshath Mobika, a Computer Science Engineering graduate
-passionate about Web Development, Software Solutions,
-E-commerce Management, and Computer Science Education.
+passionate about web development, software solutions,
+e-commerce management and computer science education.
 
-I enjoy creating websites, learning new technologies,
-and building practical solutions for real-world problems.
+I enjoy learning new technologies and building practical
+digital solutions.
 
 </p>
 
 
+</div>
 
-<!-- Education -->
+
+</section>
 
 
-<h2>
+
+
+
+<section class="about-section">
+
+
+<h1>
 Education
-</h2>
+</h1>
 
 
-<div class="timeline">
+<div class="about-cards">
 
 
-<div class="card">
+<div class="about-card">
 
 <h3>
 B.E Computer Science Engineering
@@ -97,7 +127,7 @@ Anna University
 
 
 
-<div class="card">
+<div class="about-card">
 
 <h3>
 B.Ed Computer Science
@@ -116,40 +146,35 @@ Kavi College of Education
 
 
 
-<!-- Experience -->
 
-
-<h2>
+<h1>
 Experience
-</h2>
+</h1>
 
 
-<div class="timeline">
+<div class="about-cards">
 
 
-<div class="card">
+<div class="about-card">
 
 <h3>
 Computer Science Teacher
 </h3>
 
 <p>
-
 Hameediah Matriculation Higher Secondary School
 
 <br><br>
 
 Teaching Computer Science and maintaining
 school website updates.
-
 </p>
 
 </div>
 
 
 
-
-<div class="card">
+<div class="about-card">
 
 <h3>
 E-commerce Website Manager
@@ -157,12 +182,9 @@ E-commerce Website Manager
 
 <p>
 
-NMS Shopping
-
-<br><br>
-
-Managing products, website updates,
-and online store maintenance.
+Managing products,
+categories,
+online store updates and maintenance.
 
 </p>
 
@@ -170,7 +192,8 @@ and online store maintenance.
 
 
 
-<div class="card">
+
+<div class="about-card">
 
 <h3>
 Web Developer
@@ -178,57 +201,56 @@ Web Developer
 
 <p>
 
-Website design, WordPress management,
-Wix website updates and digital solutions.
+Website design, WordPress,
+Wix management and digital solutions.
 
 </p>
 
 </div>
 
 
-
 </div>
 
 
 
 
-<!-- Certificates -->
+
+<h1>
+Certifications
+</h1>
 
 
-<h2>
-Certificates
-</h2>
+
+<div class="about-cards">
 
 
-<div class="cards">
-
-
-<div class="card">
-
-<h3>
-✔ IBM Python 101 for Data Science
-</h3>
-
-</div>
-
-
-<div class="card">
+<div class="about-card">
 
 <h3>
-✔ Java Workshop
+IBM Python 101 for Data Science
 </h3>
 
 </div>
 
 
 
-<div class="card">
+<div class="about-card">
 
 <h3>
-✔ IITM CODE School Connect SPOC
+Java Workshop
 </h3>
 
 </div>
+
+
+<div class="about-card">
+
+<h3>
+IITM CODE School Connect SPOC
+</h3>
+
+</div>
+
 
 
 </div>
@@ -247,7 +269,12 @@ Certificates
 
 </footer>
 
+
+
+<script src="script.js"></script>
+
 <script src="darkmode.js"></script>
+
 
 </body>
 
