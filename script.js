@@ -1,77 +1,74 @@
 // Typing Animation
 
-const text = [
-    "Computer Science Engineer",
+const texts = [
     "Web Developer",
-    "Ecommerce Website Manager",
-    "Computer Science Teacher"
+    "E-commerce Manager",
+    "Computer Science Teacher",
+    "Software Developer"
 ];
 
 
 let index = 0;
-
 let charIndex = 0;
 
 
-let typingElement = document.getElementById("typing");
+function typeEffect(){
+
+    const typing = document.getElementById("typing");
+
+    if(!typing) return;
 
 
-function type(){
+    if(charIndex < texts[index].length){
 
-    if(charIndex < text[index].length){
-
-        typingElement.innerHTML += text[index].charAt(charIndex);
+        typing.textContent += texts[index].charAt(charIndex);
 
         charIndex++;
 
-        setTimeout(type,100);
+        setTimeout(typeEffect,100);
 
     }
-
     else{
 
-        setTimeout(erase,1500);
+        setTimeout(()=>{
+
+            typing.textContent="";
+            charIndex=0;
+
+            index++;
+
+            if(index >= texts.length){
+
+                index=0;
+
+            }
+
+            typeEffect();
+
+        },1000);
 
     }
 
 }
 
 
-
-function erase(){
-
-    if(charIndex > 0){
-
-        typingElement.innerHTML =
-        text[index].substring(0,charIndex-1);
-
-        charIndex--;
-
-        setTimeout(erase,50);
-
-    }
-
-    else{
-
-        index++;
-
-        if(index >= text.length){
-
-            index=0;
-
-        }
+typeEffect();
 
 
-        setTimeout(type,500);
 
-    }
+// Mobile Menu
+
+const menuIcon = document.getElementById("menu-icon");
+
+const navLinks = document.getElementById("nav-links");
+
+
+if(menuIcon){
+
+    menuIcon.addEventListener("click",()=>{
+
+        navLinks.classList.toggle("active");
+
+    });
 
 }
-
-
-
-document.addEventListener("DOMContentLoaded",function(){
-
-    type();
-
-});
