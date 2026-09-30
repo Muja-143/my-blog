@@ -3,8 +3,6 @@
 const texts = [
     "Web Developer",
     "E-commerce Manager",
-    "Computer Science Teacher",
-    "Software Developer"
 ];
 
 
